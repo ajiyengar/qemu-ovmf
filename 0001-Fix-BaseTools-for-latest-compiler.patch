@@ -1,0 +1,13 @@
+diff --git a/BaseTools/Source/C/Makefiles/header.makefile b/BaseTools/Source/C/Makefiles/header.makefile
+index 0df728f327..86583d6d76 100644
+--- a/BaseTools/Source/C/Makefiles/header.makefile
++++ b/BaseTools/Source/C/Makefiles/header.makefile
+@@ -94,7 +94,7 @@ else
+ BUILD_CFLAGS = -MD -fshort-wchar -fno-strict-aliasing -fwrapv \
+ -fno-delete-null-pointer-checks -Wall -Werror \
+ -Wno-deprecated-declarations -Wno-stringop-truncation -Wno-restrict \
+--Wno-unused-result -nostdlib -g
++-Wno-unused-result -nostdlib -g -Wno-use-after-free -Wno-dangling-pointer -Wno-stringop-overflow
+ endif
+ endif
+ ifeq ($(CXX), llvm)

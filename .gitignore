@@ -1,0 +1,7 @@
+tags
+cscope*
+gdb*
+.gdb*
+debugcon.log
+Build*
+VirtualDrive*
